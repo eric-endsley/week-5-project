@@ -7,7 +7,7 @@ describe ('SpaceAge', () => {
      spaceAge = new SpaceAge();
   });
   test('should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 ', () => {
-    expect(spaceAge.mercuryConst).toEqual(0.27)
+    expect(spaceAge.mercuryConst).toEqual(0.24)
     expect(spaceAge.venusConst).toEqual(0.62)
     expect(spaceAge.marsConst).toEqual(1.88)
     expect(spaceAge.jupiterConst).toEqual(11.86)
