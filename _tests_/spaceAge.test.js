@@ -1,0 +1,13 @@
+import { TestScheduler } from 'jest';
+import { SpaceAge } from '../src/js/spaceAge.js'
+
+describe ('SpaceAge', () => {
+  beforeEach(() => {
+    let spaceAge = new SpaceAge(20);
+  });
+
+  test('should construct a SpaceAge object with property age equal to age parameter', () => {
+  expect(spaceAge.age).toEqual(20)
+  });
+
+});
