@@ -10,7 +10,7 @@ describe ('SpaceAge', () => {
   expect(spaceAge.age).toEqual(20)
   });
   test('should construct a SpaceAge object with property mercuryAge equal to age parameter divided by 0.24', () => {
-  expect(spaceAge.mercuryAge).toEqual(83)
+  expect(spaceAge.mercuryAge).toEqual(85)
   });
 });
 
