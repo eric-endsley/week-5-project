@@ -11,8 +11,9 @@ TODO
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
 | Space Age Constructor |||
-| should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 | new SpaceAge(20) | SpaceAge {Age: 20, mercuryConst: 0.24, venusConst: 0.62, marsConst: 1.88, jupiterConst: 11.86}|
+| should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 | new SpaceAge() | SpaceAge {mercuryConst: 0.24, venusConst: 0.62, marsConst: 1.88, jupiterConst: 11.86}|
 | Space Age Calculator |||
+| should return a string stating the relative age of a user on a given planet, rounded to the nearest integer, given their age on Earth | 20, "mars" | "Since you are 20 on Earth, you would be 32 on Mars."
 |Life Expectancy Checker|||
 | should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth | spaceAge = New SpaceAge(); spaceAge.lifeExpect(75, mars) | "you have 29 mars years left to live" |
 ||||
