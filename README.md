@@ -16,6 +16,9 @@ TODO
 | should construct a SpaceAge object with property venusAge equal to age parameter divided by 0.62 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., venusAge: 62, ...}|
 | should construct a SpaceAge object with property marsAge equal to age parameter divided by 1.88 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., marsAge: 11, ... }|
 | should construct a SpaceAge object with property jupiterAge equal to age parameter divided by 11.86 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., jupiterAge: 2, ...}|
+|Life Expectancy Checker|||
+| should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth | spaceAge = New SpaceAge(20); spaceAge.lifeExpect(75, mars) | "you have 29 mars years left to live" |
+||||
 ||||
 
 

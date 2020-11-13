@@ -23,4 +23,13 @@ describe ('SpaceAge', () => {
     });
 });
 
+describe ('lifeExpect', () => {
+  let spaceAge
+  beforeEach(() => {
+    spaceAge = New SpaceAge(20)
+  });
+  test('should return a string which states how many years a person has to live rounded to the nearest integer, on a given planet, given a life expectancy on Earth')
+    expect(spaceAge.lifeExpect(75, mercury).toEqual(229))
+}
+
 
