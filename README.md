@@ -11,7 +11,7 @@ TODO
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
 | Spage Age Calculator |||
-| should construct an object with property age equivalent to user inputted age | new SpageAge(20) | SpageAge {Age: 20} |
+| should construct a SpaceAge object with property age equal to age parameter | new SpageAge(20) | SpageAge {Age: 20} |
 ||||
 ||||
 ||||
