@@ -10,14 +10,11 @@ TODO
 ## Specs
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
-| Spage Age Calculator |||
-| should construct a SpaceAge object with property age equal to age parameter | new SpageAge(20) | SpageAge {Age: 20, ...} |
-| should construct a SpaceAge object with property mercuryAge equal to age parameter divided by 0.24 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., mercuryAge: 83, ...}|
-| should construct a SpaceAge object with property venusAge equal to age parameter divided by 0.62 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., venusAge: 62, ...}|
-| should construct a SpaceAge object with property marsAge equal to age parameter divided by 1.88 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., marsAge: 11, ... }|
-| should construct a SpaceAge object with property jupiterAge equal to age parameter divided by 11.86 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {..., jupiterAge: 2, ...}|
+| Space Age Constructor |||
+| should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 | new SpaceAge(20) | SpaceAge {Age: 20, mercuryConst: 0.24, venusConst: 0.62, marsConst: 1.88, jupiterConst: 11.86}|
+| Space Age Calculator |||
 |Life Expectancy Checker|||
-| should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth | spaceAge = New SpaceAge(20); spaceAge.lifeExpect(75, mars) | "you have 29 mars years left to live" |
+| should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth | spaceAge = New SpaceAge(); spaceAge.lifeExpect(75, mars) | "you have 29 mars years left to live" |
 ||||
 ||||
 
