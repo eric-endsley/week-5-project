@@ -13,7 +13,7 @@ describe ('SpaceAge', () => {
     expect(spaceAge.mercuryAge).toEqual(83)
   });  
   test('should construct a SpaceAge object with property venusAge equal to age parameter divided by 0.62 rounded to the nearest integer', () => {
-    expect(spaceAge.venusAge).toEqual(30)
+    expect(spaceAge.venusAge).toEqual(32)
   });
 //   test('should construct a SpaceAge object with property marsAge equal to age parameter divided by 1.88 rounded to the nearest integer', () => {
 //     expect(spaceAge.marsAge).toEqual(0)
