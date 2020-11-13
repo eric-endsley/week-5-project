@@ -11,8 +11,8 @@ TODO
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
 | Spage Age Calculator |||
-| should construct a SpaceAge object with property age equal to age parameter | new SpageAge(20) | SpageAge {Age: 20} |
-| should construct a SpaceAge object with properties mercuryAge, venusAge, marsAge & jupiterAge equal to 0 | new SpaceAge(20) | SpaceAge {Age: 20, mercuryAge: 0, venusAge: 0, marsAge: 0, jupiterAge: 0 }|
+| should construct a SpaceAge object with property age equal to age parameter | new SpageAge(20) | SpageAge {Age: 20, ...} |
+| should construct a SpaceAge object with property mercuryAge equal to age parameter divided by 0.24 rounded to the nearest integer | new SpaceAge(20) | SpaceAge {Age: 20, mercuryAge: 83, ...}|
 ||||
 ||||
 ||||
