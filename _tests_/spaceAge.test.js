@@ -4,31 +4,21 @@ import { SpaceAge } from '../src/js/spaceAge.js'
 describe ('SpaceAge', () => {
   let spaceAge
   beforeEach(() => {
-     spaceAge = new SpaceAge(20);
+     spaceAge = new SpaceAge();
   });
-  test('should construct a SpaceAge object with property age equal to age parameter', () => {
-    expect(spaceAge.age).toEqual(20)
+  test('should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 ', () => {
+    expect(spaceAge.mercuryConst).toEqual(0.27)
+    expect(spaceAge.venusConst).toEqual(0.62)
+    expect(spaceAge.marsConst).toEqual(1.88)
+    expect(spaceAge.jupiterConst).toEqual(11.86)
   });
- test('should construct a SpaceAge object with property mercuryAge equal to age parameter divided by 0.24 rounded to the nearest integer', () => {
-    expect(spaceAge.mercuryAge).toEqual(83)
-  });  
-  test('should construct a SpaceAge object with property venusAge equal to age parameter divided by 0.62 rounded to the nearest integer', () => {
-    expect(spaceAge.venusAge).toEqual(32)
-  });
-  test('should construct a SpaceAge object with property marsAge equal to age parameter divided by 1.88 rounded to the nearest integer', () => {
-    expect(spaceAge.marsAge).toEqual(11)
-  });
-  test('should construct a SpaceAge object with property jupiterAge equal to age parameter divided by 11.86 rounded to the nearest integer', () => {
-      expect(spaceAge.jupiterAge).toEqual(2)
-  });
-});
-
-describe ('lifeExpect', () => {
-  let spaceAge
-  beforeEach(() => {
-    spaceAge = new SpaceAge(20)
-  });
-  test('should return a string which states how many years a person has to live rounded to the nearest integer, on a given planet, given a life expectancy on Earth', () => {
-    expect(spaceAge.lifeExpect(75, "mercury")).toEqual(229)
-  });
+ 
+// describe ('lifeExpect', () => {
+//   let spaceAge
+//   beforeEach(() => {
+//     spaceAge = new SpaceAge(20)
+//   });
+//   test('should return a string which states how many years a person has to live rounded to the nearest integer, on a given planet, given a life expectancy on Earth', () => {
+//     expect(spaceAge.lifeExpect(75, "mercury")).toEqual(229)
+//   });
 });

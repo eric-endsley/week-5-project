@@ -1,9 +1,12 @@
 export class SpaceAge {
-  constructor(age) {
-    this.age = age;
-    this.mercuryAge = Math.round(age / 0.24);
-    this.venusAge = Math.round(age / 0.62);
-    this.marsAge = Math.round(age / 1.88);
-    this.jupiterAge = Math.round(age / 11.86);
+  constructor() {
+    this.mercuryConst = 0.24;
+    this.venusConst = 0.62;
+    this.marsConst = 1.88;
+    this.jupiterConst = 11.86;
   }
+//   lifeExpect(lifeSpan, planet) {
+//     console.log(this[${planet}Age])
+//     lifeSpan - this[planet + Age]
+//   }
 };
