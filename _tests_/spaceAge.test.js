@@ -37,6 +37,5 @@ describe ('lifeExpect', () => {
     expect(spaceAge.lifeExpect(20, 75, "venus")).toEqual("You should have 89 years left to live on Venus.")
     expect(spaceAge.lifeExpect(20, 75, "mars")).toEqual("You should have 29 years left to live on Mars.")
     expect(spaceAge.lifeExpect(20, 75, "jupiter")).toEqual("You should have 5 years left to live on Jupiter.")
-
   });
 });
