@@ -12,7 +12,17 @@ describe ('SpaceAge', () => {
     expect(spaceAge.marsConst).toEqual(1.88)
     expect(spaceAge.jupiterConst).toEqual(11.86)
   });
- 
+});
+
+describe ('spaceAgeCalc', () => {
+  let spaceAge
+  beforeEach(() => {
+    spaceAge = new SpaceAge()
+  });
+  test('should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth', () => {
+    expect(spaceAge.spaceAgeCalc(20, "mercury").toEqual("Since you are 20 on Earth, you would be 83 on Mercury."))
+  });
+});
 // describe ('lifeExpect', () => {
 //   let spaceAge
 //   beforeEach(() => {
@@ -21,4 +31,3 @@ describe ('SpaceAge', () => {
 //   test('should return a string which states how many years a person has to live rounded to the nearest integer, on a given planet, given a life expectancy on Earth', () => {
 //     expect(spaceAge.lifeExpect(75, "mercury")).toEqual(229)
 //   });
-});
