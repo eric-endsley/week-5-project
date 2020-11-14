@@ -15,7 +15,7 @@ TODO
 | Space Age Calculator |||
 | should return a string stating the relative age of a user on a given planet, rounded to the nearest integer, given their age on Earth | 20, "mars" | "Since you are 20 on Earth, you would be 32 on Mars."
 |Life Expectancy Checker|||
-| should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth | spaceAge = New SpaceAge(); spaceAge.lifeExpect(75, mars) | "you have 29 mars years left to live" |
+| should return a string which states how many years an average person should have left to live on a given planet, given an age & life expectancy on Earth | 20, 75, mars | "You should have 29 years left to live on Mars" |
 ||||
 ||||
 
