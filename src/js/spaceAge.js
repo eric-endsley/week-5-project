@@ -13,7 +13,7 @@ export class SpaceAge {
   }
 
   lifeExpect(age, lifeSpan, planet) {
-    let planetLifeExpect = Math.round(lifeSpan - age / this[planet + "Const"]);
+    let planetLifeExpect = Math.round((lifeSpan - age) / this[planet + "Const"]);
     let planetToCap = planet.charAt(0).toUpperCase() + planet.slice(1);
     return `You should have ${planetLifeExpect} years left to live on ${planetToCap}.`;
   }
