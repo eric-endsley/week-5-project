@@ -20,7 +20,7 @@ describe ('spaceAgeCalc', () => {
     spaceAge = new SpaceAge();
   });
   test('should return a string stating the relative age of a user on a given planet, rounded to the nearest integer, given their age on Earth', () => {
-    expect(spaceAge.spaceAgeCalc(20, "mercury")).toEqual("Since you are 20 on Earth, you would be 83 on Mercury.")
+    expect(spaceAge.spaceAgeCalc(20, "mercury")).toEqual("Since you are 20 on Earth, you would be 85 on Mercury.")
   });
 });
 // describe ('lifeExpect', () => {
