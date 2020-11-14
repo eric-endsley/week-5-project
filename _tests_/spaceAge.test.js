@@ -32,7 +32,7 @@ describe ('lifeExpect', () => {
   beforeEach(() => {
     spaceAge = new SpaceAge()
   });
-  test('should return a string which states how many years an average person should have left to live on a given planet, given an age & life expectancy on Earth', () => {
+  test('should return a string stating how many years an average person should have left to live on a given planet, given an age & life expectancy on Earth', () => {
     expect(spaceAge.lifeExpect(20, 75, "mercury")).toEqual("You should have 229 years left to live on Mercury.")
     expect(spaceAge.lifeExpect(20, 75, "venus")).toEqual("You should have 89 years left to live on Venus.")
     expect(spaceAge.lifeExpect(20, 75, "mars")).toEqual("You should have 29 years left to live on Mars.")
