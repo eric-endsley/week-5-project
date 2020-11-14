@@ -22,8 +22,8 @@ describe ('spaceAgeCalc', () => {
   test('should return a string stating the relative age of a user on a given planet, rounded to the nearest integer, given their age on Earth', () => {
     expect(spaceAge.spaceAgeCalc(20, "mercury")).toEqual("Since you are 20 on Earth, you would be 83 on Mercury.")
     expect(spaceAge.spaceAgeCalc(20, "venus")).toEqual("Since you are 20 on Earth, you would be 32 on Venus.")
-    expect(spaceAge.spaceAgeCalc(20, "mars")).toEqual("Since you are 20 on Earth, you would be 11 on Mars.")
-    expect(spaceAge.spaceAgeCalc(20, "jupiter")).toEqual("Since you are 20 on Earth, you would be 2 on Jupiter")
+    expect(spaceAge.spaceAgeCalc(20, "mars")).toEqual("Since you are 20 on Earth, you would be 10 on Mars.")
+    expect(spaceAge.spaceAgeCalc(20, "jupiter")).toEqual("Since you are 20 on Earth, you would be 2 on Jupiter.")
   });
 });
 // describe ('lifeExpect', () => {
