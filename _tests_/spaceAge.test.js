@@ -17,10 +17,10 @@ describe ('SpaceAge', () => {
 describe ('spaceAgeCalc', () => {
   let spaceAge
   beforeEach(() => {
-    spaceAge = new SpaceAge()
+    spaceAge = new SpaceAge();
   });
-  test('should return a string which states how many years a person has to live on a given planet, given a life expectancy on Earth', () => {
-    expect(spaceAge.spaceAgeCalc(20, "mercury").toEqual("Since you are 20 on Earth, you would be 83 on Mercury."))
+  test('should return a string stating the relative age of a user on a given planet, rounded to the nearest integer, given their age on Earth', () => {
+    expect(spaceAge.spaceAgeCalc(20, "mercury")).toEqual("Since you are 20 on Earth, you would be 83 on Mercury.")
   });
 });
 // describe ('lifeExpect', () => {
