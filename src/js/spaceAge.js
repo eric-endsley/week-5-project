@@ -22,7 +22,7 @@ export class SpaceAge {
       let planetToCap = planet.charAt(0).toUpperCase() + planet.slice(1);
       return `You should have ${planetLifeExpect} years left to live on ${planetToCap}.`;
     } else {
-      return "You aren't at the end of your rope."
+      return "You are at the end of your rope."
     }
   } 
 }
