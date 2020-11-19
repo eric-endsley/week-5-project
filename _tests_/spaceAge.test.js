@@ -40,6 +40,9 @@ describe ('lifeExpect', () => {
   });
   test('should return a string which states how many years a person has lived beyond their average life expectancy on a given planet if they have done so, rounded to the nearest integer', () => {
     expect(spaceAge.lifeExpect(80, 75, "mercury")).toEqual("You have lived 21 Mercury-years past your life expectancy. Congrats.")
+    expect(spaceAge.lifeExpect(80, 75, "venus")).toEqual("You have lived 8 Venus-years past your life expectancy. Congrats.")
+    expect(spaceAge.lifeExpect(80, 75, "mars")).toEqual("You have lived 3 Mars-years past your life expectancy. Congrats.")
+    expect(spaceAge.lifeExpect(80, 75, "jupiter")).toEqual("You have lived 0 Jupiter-years past your life expectancy. Congrats.")
   });
   test('should return "You are at the end of your rope" if inputted age is equal to life expectancy', () => {
     expect(spaceAge.lifeExpect(75, 75, "mercury")).toEqual("You are at the end of your rope.")
