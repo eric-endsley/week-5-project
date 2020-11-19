@@ -17,9 +17,7 @@ TODO
 |Life Expectancy Checker|||
 | should return a string which states how many years an average person should have left to live on a given planet, rounded to the nearest integer, given an age & life expectancy on Earth | 20, 75, mars | "You should have 29 years left to live on Mars" |
 |  should return a string which states how many years a person has lived beyond their average life expectancy on a given planet if they have done so, rounded to the nearest integer | 80, 75, mars | "You should have 3 years left to live on Mars" |
-|  should return "You're at the end of your rope" if a person's age is equal to their live expectancy| 75, 75, mars | "You're at the end of your rope" |
-
-
+| should return "You're at the end of your rope" if a person's age is equal to their live expectancy | 75, 75, mars | "You're at the end of your rope" |
 ## Setup
 #### Get Node
 This project requires Node.js to run. If you don't have Node installed on your machine already, go to the [Node download page](https://nodejs.org/en/download/) and follow their instructions to install.
