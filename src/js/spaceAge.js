@@ -16,11 +16,11 @@ export class SpaceAge {
     if (age > lifeSpan) {
       let planetLifeBeyond = Math.round((age - lifeSpan) / this[planet + "Const"]);
       let planetToCap = planet.charAt(0).toUpperCase() + planet.slice(1);
-      return `You have live ${planetLifeBeyond} ${planetToCap}-years past your life expectancy. Congrats`
+      return `You have lived ${planetLifeBeyond} ${planetToCap}-years past your life expectancy. Congrats.`
     } else if (lifeSpan > age) {
       let planetLifeExpect = Math.round((lifeSpan - age) / this[planet + "Const"]);
       let planetToCap = planet.charAt(0).toUpperCase() + planet.slice(1);
       return `You should have ${planetLifeExpect} years left to live on ${planetToCap}.`;
-    }
+    } else {}
   } 
 }

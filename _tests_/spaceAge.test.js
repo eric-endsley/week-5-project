@@ -6,7 +6,7 @@ describe ('SpaceAge', () => {
   beforeEach(() => {
      spaceAge = new SpaceAge();
   });
-  test('should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 ', () => {
+test('should construct a SpaceAge object with property mercuryConst equal to 0.24, venusConst equal to 0.62, marsConst equal to 1.88, & jupiterConst equal to 11.86 ', () => {
     expect(spaceAge.mercuryConst).toEqual(0.24)
     expect(spaceAge.venusConst).toEqual(0.62)
     expect(spaceAge.marsConst).toEqual(1.88)
@@ -38,7 +38,10 @@ describe ('lifeExpect', () => {
     expect(spaceAge.lifeExpect(20, 75, "mars")).toEqual("You should have 29 years left to live on Mars.")
     expect(spaceAge.lifeExpect(20, 75, "jupiter")).toEqual("You should have 5 years left to live on Jupiter.")
   });
-    test('should return a string which states how many years a person has lived beyond their average life expectancy on a given planet if they have done so, rounded to the nearest integer', () => {
-      expect(spaceAge.lifeExpect(80, 75, "mercury")).toEqual("You have lived 21 Mercury-years past your life expectancy. Congrats")
+  test('should return a string which states how many years a person has lived beyond their average life expectancy on a given planet if they have done so, rounded to the nearest integer', () => {
+      expect(spaceAge.lifeExpect(80, 75, "mercury")).toEqual("You have lived 21 Mercury-years past your life expectancy. Congrats.")
+  });
+  test('should return "You are at the end of your rope" if inputted age is equal to life expectancy', () => {
+    expect(spaceAge.lifeExpect(75, 75, "mercury")).toEqual("You are at the end of your rope")
   });
 });
