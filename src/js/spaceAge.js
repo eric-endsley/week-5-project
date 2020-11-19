@@ -20,7 +20,7 @@ export class SpaceAge {
     } else if (lifeSpan > age) {
       let planetLifeExpect = Math.round((lifeSpan - age) / this[planet + "Const"]);
       let planetToCap = planet.charAt(0).toUpperCase() + planet.slice(1);
-      return `You should hve ${planetLifeExpect} years left to live on ${planetToCap}.`;
+      return `You should have ${planetLifeExpect} years left to live on ${planetToCap}.`;
     } else {
       return "You are at the end of your rope."
     }
