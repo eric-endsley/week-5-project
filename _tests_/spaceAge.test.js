@@ -38,4 +38,7 @@ describe ('lifeExpect', () => {
     expect(spaceAge.lifeExpect(20, 75, "mars")).toEqual("You should have 29 years left to live on Mars.")
     expect(spaceAge.lifeExpect(20, 75, "jupiter")).toEqual("You should have 5 years left to live on Jupiter.")
   });
+    test('should return a string which states how many years a person has lived beyond their average life expectancy on a given planet if they have done so, rounded to the nearest integer', () => {
+      expect(spaceAge.lifeExpect(80, 75, "mercury")).toEqual("You have lived 21 years passed your life expectancy in Mercury years")
+  });
 });
