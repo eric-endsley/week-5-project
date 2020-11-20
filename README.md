@@ -5,7 +5,9 @@
 #### By Eric Endsley
 
 ## Description
-TODO
+This program contains the business logic for a webpage or application which can return: A. a user's relative age counted in years on another specified planet B. a user's expected years to live in years on another planet, given a specified life expectancy if they have not yet reached their life expectancy C. a user's years lived on another specified planet beyond their life expectancy, if they have lived beyond the specified life expectancy.
+
+This program also contains tests of the backend functionality and the components to quickly install the development environment and make tests.  
 
 ## Specs
 | Test | Input | Output |
