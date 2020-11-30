@@ -26,7 +26,7 @@ This program also contains tests of the backend functionality and the components
 This project requires Node.js to run. If you don't have Node installed on your machine already, go to the [Node download page](https://nodejs.org/en/download/) and follow their instructions to install.
 
 #### Clone and Open Locally
- 1. Open the [programming language quiz github page](https://github.com/eric-endsley/week-5-project.git) by clicking the link or copy/pasting https://github.com/eric-endsley/week-5-project.git in the navigator bar of a web browser application.
+ 1. Open the [Space Age Calculator github page](https://github.com/eric-endsley/week-5-project.git) by clicking the link or copy/pasting https://github.com/eric-endsley/week-5-project.git in the navigator bar of a web browser application.
 
  2. Click the green Code button in the upper-right part of the window and then EITHER:
 
